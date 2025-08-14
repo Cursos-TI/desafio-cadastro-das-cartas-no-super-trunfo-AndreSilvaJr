@@ -13,7 +13,7 @@ int main() {
     int turismo1, turismo2;
     float area1, area2;
     float pib1, pib2;
-    char estado1[50], estado2[50]; 
+    char estado1, estado2; 
     char cidade1[50], cidade2[50];
     char codigo1[50], codigo2[50];
     // Cadastro das Cartas:
@@ -22,7 +22,7 @@ int main() {
     printf("Digite os dados da Carta 01: \n");
 
     printf("Estado: ");
-    scanf("%s", estado1);
+    scanf(" %c", &estado1);
 
     printf("Código: ");
     scanf("%s", codigo1);
@@ -46,7 +46,7 @@ int main() {
     printf("Digite os dados da Carta 02: \n");
 
     printf("Estado: ");
-    scanf("%s", estado2);
+    scanf(" %c", &estado2);
 
     printf("Código: ");
     scanf("%s", codigo2);
@@ -71,7 +71,7 @@ int main() {
     // Exibição dos valores inseridos para cada atributo da cidade, um por linha.
     printf("\n");      //espaçamento para ajuste da exibição.
     printf("CARTA 01: \n");
-    printf("Estado: %s \n", estado1);
+    printf("Estado: %c \n", estado1);
     printf("Código: %s \n", codigo1);
     printf("Nome da Cidade: %s \n", cidade1);
     printf("População: %d habitantes. \n", populacao1);
@@ -82,7 +82,7 @@ int main() {
 
     printf("\n");       //espaçamento para ajuste da exibição.
     printf("CARTA 02: \n");
-    printf("Estado: %s \n", estado2);
+    printf("Estado: %c \n", estado2);
     printf("Código: %s \n", codigo2);
     printf("Nome da Cidade: %s \n", cidade2);
     printf("População: %d habitantes. \n", populacao2);
